@@ -1,0 +1,17 @@
+<h1 mat-dialog-title class="text-center">{{ title }}</h1>
+
+<div mat-dialog-content class="text-center">
+  {{ text }}
+  <h2>{{ correctWord }}</h2>
+</div>
+
+<div mat-dialog-actions align="center">
+  <button
+    class="btn btn-primary"
+    mat-button
+    mat-dialog-close
+    (click)="refresh()"
+  >
+    {{ button }}
+  </button>
+</div>

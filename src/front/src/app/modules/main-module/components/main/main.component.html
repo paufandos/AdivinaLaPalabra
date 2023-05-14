@@ -1,0 +1,83 @@
+<form #formularioPalabra="ngForm" (ngSubmit)="sendWord()" autocomplete="off">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col d-flex flex-column align-items-center">
+        <h1 class="mb-5">BIENVENIDO A ADIVINA LA PALABRA</h1>
+        <div class="row mb-3" *ngFor="let round of rounds; let idRound = index">
+          <div
+            class="casilla"
+            *ngFor="let letter of rounds[idRound].wordRound; let idCasilla= index"
+            [ngClass]="{
+              yellow: rounds[idRound].wordStatusRound[idCasilla] === 'CONTAINED' ,
+              green: rounds[idRound].wordStatusRound[idCasilla] === 'MATCHED' ,
+              grey: rounds[idRound].wordStatusRound[idCasilla] === 'NOT_MATCHED',
+              selected: rounds[idRound].positionInput === idCasilla,
+            }"
+            (click)="getPosition(idCasilla,idRound)"
+          >
+            {{ letter }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="text-center contenedorTeclado">
+        <button
+          type="button"
+          class="btn btn-light btn-lg teclasTeclado"
+          *ngFor="let tecla of teclado; let index = index"
+          [ngClass]="{
+            yellow: tecladoStatus[index] === 'CONTAINED' ,
+            green: tecladoStatus[index] === 'MATCHED' ,
+            grey: tecladoStatus[index] === 'NOT_MATCHED',
+          }"
+          (click)="writeLetter(tecla)"
+          [disabled]="disableKeyboard"
+        >
+          {{ tecla }}
+        </button>
+        <button
+          type="button"
+          class="btn btn-light btn-lg teclasTeclado"
+          (click)="deleteLetter()"
+          [disabled]="disableKeyboard"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-arrow-bar-left"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"
+            />
+          </svg>
+        </button>
+        <button
+          type="submit"
+          class="btn btn-primary btn-l m-1 px-3 py-3"
+          [disabled]="word[4] === '' || disableKeyboard"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-send-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"
+            />
+          </svg>
+          Enviar
+        </button>
+      </div>
+    </div>
+  </div>
+</form>

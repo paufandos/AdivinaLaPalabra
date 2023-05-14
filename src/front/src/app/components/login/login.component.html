@@ -1,0 +1,56 @@
+<div class="container-fluid text-center bg-success p-5 bg-opacity-50">
+  <div class="row">
+    <div class="col-12 mb-5">
+      <h1>Iniciar sesión para jugar</h1>
+    </div>
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-7">
+      <form (ngSubmit)="login()" [formGroup]="userForm" autocomplete="off">
+        <div class="row">
+          <input
+            type="text"
+            name="username"
+            class="form-control form-control-sm"
+            formControlName="username"
+            placeholder="Usuario"
+          />
+        </div>
+        <span
+          *ngIf="
+            userForm.get('username')?.errors &&
+            this.userForm.controls['username']?.touched
+          "
+          id="Error"
+          class="form-text text-danger"
+        >
+          {{ identifyError(userForm.get("username")) }}
+        </span>
+        <div class="row mt-4">
+          <input
+            type="password"
+            name="password"
+            class="form-control form-control-sm"
+            formControlName="password"
+            placeholder="Contraseña"
+          />
+        </div>
+        <div class="mb-4">
+          <span
+            *ngIf="
+              userForm.get('password')?.errors &&
+              this.userForm.controls['password']?.touched
+            "
+            id="Error"
+            class="form-text text-danger"
+          >
+            {{ identifyError(userForm.get("password")) }}</span
+          >
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          Logearse
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

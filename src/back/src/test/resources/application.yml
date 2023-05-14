@@ -1,0 +1,28 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1;MODE=MySQL;NON_KEYWORDS= USER
+    username: root
+    password: admin
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+      cors:
+    allowed-origins: "http://localhost:8080"
+    allowed-methods: GET, POST, PATCH, PUT, DELETE, OPTIONS, HEAD
+    max-age: 3600
+    allowed-headers: "Requestor-Type"
+    exposed-headers: "X-Get-Header"
+jwt:
+  secret: adivinaLaPalabraGrupo2Sopra
+  expiration: 90000000
+dates:
+  timezone: "Europe/Madrid"
+security:
+  allowed-routes: /auth/**
