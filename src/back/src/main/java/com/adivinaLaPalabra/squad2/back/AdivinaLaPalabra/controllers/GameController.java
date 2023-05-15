@@ -58,11 +58,13 @@ public class GameController {
     }
 
     @GetMapping("/getLastTenGames")
-    private List<GameHistoryDTO> getLastTenGames(@RequestHeader(name = "Authorization") String authHeader)
+    private LastTenGamesResponseDTO getLastTenGames(@RequestHeader(name = "Authorization") String authHeader)
             throws InsufficientGamesException {
         log.info("Request to getLastTenGames");
         String username = jwtUtils.getUsernameFromAuthHeader(authHeader);
-        return gameService.getLastTenGames(username);
+        List<GameHistoryDTO> games = gameService.getLastTenGames(username);
+        Boolean hasEnoughGames = gameService.hasEnoughGames(username);
+        return new LastTenGamesResponseDTO(hasEnoughGames, games);
     }
 
     @GetMapping("/getAllGames")

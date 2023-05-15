@@ -16,10 +16,11 @@ public interface IGameService {
 
     public CheckAttemptsInRangeDTO checkFiveAttempts(UUID gameId);
 
-    List<GameHistoryDTO> getTopThreeGames(String username);
+    public List<GameHistoryDTO> getTopThreeGames(String username);
 
     public List<GameHistoryDTO> getLastTenGames(String username);
 
     public List<GameHistoryDTO> getAllGames(String username) throws InsufficientGamesException;
 
+    public Boolean hasEnoughGames(String usename);
 }

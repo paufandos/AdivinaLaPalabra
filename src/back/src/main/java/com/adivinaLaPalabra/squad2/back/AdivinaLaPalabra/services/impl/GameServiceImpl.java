@@ -77,13 +77,14 @@ public class GameServiceImpl implements IGameService {
         return serializeToDTO(games);
     }
 
-    private Game saveNewGame(Game newGame) {
-        return gameRepository.save(newGame);
-    }
-
-    private boolean hasEnoughGames(String username) {
+    @Override
+    public Boolean hasEnoughGames(String username) {
         UUID userId = userServiceImpl.getUserByUsername(username).getId();
         return gameRepository.countByUser_IdAndAttemptsGreaterThan(userId,MIN_GAME_ATTEMPTS_TO_BE_SHOWED) > MAX_GAMES_SIZE;
+    }
+
+    private Game saveNewGame(Game newGame) {
+        return gameRepository.save(newGame);
     }
 
     public void checkIfUserHasEnoughGames(String username) throws InsufficientGamesException {
