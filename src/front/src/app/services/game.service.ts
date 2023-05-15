@@ -67,6 +67,12 @@ export class GameService {
     );
   }
 
+  getTop3Games(): Observable<Games[]> {
+    return this.http.get<Games[]>(
+      baseUrl.concat('getTopThreeGames')
+    );
+  }
+
   getTenGames(): Observable<Games[]> {
     return this.http.get<Games[]>(
       baseUrl.concat('getLastTenGames')

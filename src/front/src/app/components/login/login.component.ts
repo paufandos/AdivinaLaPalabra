@@ -80,10 +80,10 @@ export class LoginComponent {
 
   identifyError(error: any): string | null {
     if (error.errors?.['required']) {
-      return 'El Campo es requerido';
+      return 'El campo es requerido';
     }
     if (error.errors?.['pattern']) {
-      return 'No puede contener Caracteres Especiales';
+      return 'No puede contener caracteres especiales';
     }
     if (error.errors?.['minlength']) {
       return (

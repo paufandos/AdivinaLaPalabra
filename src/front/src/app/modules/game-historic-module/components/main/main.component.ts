@@ -15,10 +15,13 @@ export class MainComponent {
 
   areEnoughGames = true;
 
+  top3Games: Games[] = [];
+
   constructor(private gameService: GameService) {}
 
   ngOnInit(): void {
     this.setAllGames();
+    this.setTop3Games();
   }
 
   getLastGames(): Games[] {
@@ -42,6 +45,15 @@ export class MainComponent {
         this.areEnoughGames = false;
       },
       complete: () => {this.convertDate()}
+    });
+  }
+
+  setTop3Games() {
+    this.gameService.getTop3Games().subscribe({
+      next: (response) => {
+        this.top3Games = response;
+        this.convertDate()
+      },
     });
   }
 

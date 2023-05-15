@@ -1,19 +1,6 @@
-<nav class="navbar navbar-expand bg-success">
-  <img
-    class="navbar-brand mx-5"
-    id="imgLogo"
-    src="../assets/img/icon_wordle.webp"
-    [routerLink]="['main']"
-  />
-
-  <div class="navbar-collapse">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item p-2 border-end">
-        <a class="nav-link" aria-current="page" routerLink="/login">Login</a>
-      </li>
-      <li class="nav-item p-2 border-end">
-        <a class="nav-link" routerLink="/game-historic">Histórico</a>
-      </li>
-    </ul>
-  </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success justify-content-between">
+  <a class="navbar-brand mx-5" [routerLink]="['main']">
+    <img src="../assets/img/icon_wordle.webp" width="50" height="50" class="d-inline-block"/>
+  </a>
+  <a class="nav-link text-white mx-5" routerLink="/game-historic" [hidden]="isLogin"><i class="bi bi-card-checklist fs-1"></i></a>
 </nav>

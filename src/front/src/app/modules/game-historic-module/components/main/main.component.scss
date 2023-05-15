@@ -1,21 +1,11 @@
-.Titulo {
-  font-family: Arial, Helvetica, Sans-serif;
-  color: rgb(6, 6, 6);
-}
-ul {
-  list-style: none;
-}
-.table {
-  border-radius: 23px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(17, 17, 17);
+.left-radius {
+    border-radius: 0.25rem 0 0 0.25rem;
 }
 
-.scrolleable{
-  max-height: 50vh;
-  overflow: auto;
+.right-radius {
+    border-radius: 0 0.25rem 0.25rem 0;
 }
 
-.container {
-  width: 150vb;
+.green{
+    color: #198754 !important;
 }

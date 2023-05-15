@@ -38,5 +38,8 @@ export type Games = {
 
   winned: boolean;
 
+  correctWord: boolean;
+
   attempts: number;
+
 };

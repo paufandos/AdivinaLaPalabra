@@ -1,56 +1,37 @@
-<div class="container-fluid text-center bg-success p-5 bg-opacity-50">
-  <div class="row">
-    <div class="col-12 mb-5">
-      <h1>Iniciar sesión para jugar</h1>
-    </div>
-  </div>
-  <div class="row d-flex justify-content-center">
-    <div class="col-7">
-      <form (ngSubmit)="login()" [formGroup]="userForm" autocomplete="off">
-        <div class="row">
-          <input
-            type="text"
-            name="username"
-            class="form-control form-control-sm"
-            formControlName="username"
-            placeholder="Usuario"
-          />
+<div class="centered">
+  <div class="card login-form shadow">
+    <div class="card-body p-0">
+      <div class="row">
+        <div class="col-5 rounded">
+          <img class="navbar-brand w-100 p-0 rounded" id="imgLogo" src="../assets/img/icon_wordle.webp"
+            [routerLink]="['main']" />
         </div>
-        <span
-          *ngIf="
-            userForm.get('username')?.errors &&
-            this.userForm.controls['username']?.touched
-          "
-          id="Error"
-          class="form-text text-danger"
-        >
-          {{ identifyError(userForm.get("username")) }}
-        </span>
-        <div class="row mt-4">
-          <input
-            type="password"
-            name="password"
-            class="form-control form-control-sm"
-            formControlName="password"
-            placeholder="Contraseña"
-          />
+        <div class="col d-flex justify-content-center w-100 align-items-center">
+
+          <form class="w-75" (ngSubmit)="login()" [formGroup]="userForm" autocomplete="off">
+            <h3 class="card-title text-center text-success">ADIVINA LA PALABRA</h3>
+            <div class="form-group p-2">
+              <label for="exampleInputEmail1"><b>Usuario*</b> </label>
+              <input type="text" name="username" class="form-control form-control-sm" formControlName="username" />
+              <span *ngIf=" userForm.get('username')?.errors && this.userForm.controls['username']?.touched " id="Error"
+                class="form-text text-danger">
+                {{ identifyError(userForm.get("username")) }}
+              </span>
+            </div>
+            <div class="form-group p-2">
+              <label for="exampleInputPassword1"><b>Contraseña*</b></label>
+              <input type="password" name="password" class="form-control form-control-sm" formControlName="password" />
+              <span *ngIf="userForm.get('password')?.errors && this.userForm.controls['password']?.touched " id="Error"
+                class="form-text text-danger">
+                {{ identifyError(userForm.get("password")) }}</span>
+            </div>
+            <div class="form-group p-2">
+              <button type="submit" class="btn btn-primary w-100" [disabled]="!this.userForm.valid"> Inciar sesión
+              </button>
+            </div>
+          </form>
         </div>
-        <div class="mb-4">
-          <span
-            *ngIf="
-              userForm.get('password')?.errors &&
-              this.userForm.controls['password']?.touched
-            "
-            id="Error"
-            class="form-text text-danger"
-          >
-            {{ identifyError(userForm.get("password")) }}</span
-          >
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">
-          Logearse
-        </button>
-      </form>
+      </div>
     </div>
   </div>
 </div>

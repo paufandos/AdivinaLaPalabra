@@ -38,11 +38,11 @@ public class GameHelper {
             12);
 
     public static final List<GameHistoryDTO> EXPECTED_ALL_GAME_HISTORY_LIST = createGameList(
-            new GameHistoryDTO( DateUtils.generateLocalDateTimeNow(), true, 3),
+            new GameHistoryDTO( DateUtils.generateLocalDateTimeNow(), true, EXISTENT_WORD, 3),
             12);
 
     public static final List<GameHistoryDTO> EXPECTED_GAME_HISTORY_LIST = createGameList(
-            new GameHistoryDTO(DateUtils.generateLocalDateTimeNow(), true, 5),
+            new GameHistoryDTO(DateUtils.generateLocalDateTimeNow(), true, EXISTENT_WORD, 5),
             5);
 
 
@@ -50,7 +50,7 @@ public class GameHelper {
             new Game(), 3);
 
     public static final List<GameHistoryDTO> EXPECTED_TOP3_GAME_HISTORY_LIST = createGameList(
-            new GameHistoryDTO(DateUtils.generateLocalDateTimeNow(), true, 5), 3);
+            new GameHistoryDTO(DateUtils.generateLocalDateTimeNow(), true, EXISTENT_WORD, 5), 3);
 
     public static final String NEW_GAME_EXPECTED_DATA = """
             {

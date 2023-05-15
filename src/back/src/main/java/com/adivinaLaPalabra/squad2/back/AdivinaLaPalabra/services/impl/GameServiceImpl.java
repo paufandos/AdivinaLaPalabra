@@ -92,7 +92,7 @@ public class GameServiceImpl implements IGameService {
 
     private List<GameHistoryDTO> serializeToDTO(List<Game> games) {
         List<GameHistoryDTO> gamesDTO = new ArrayList<>();
-        games.forEach(game -> gamesDTO.add(new GameHistoryDTO(game.getDate(), game.getWinned(), game.getAttempts())));
+        games.forEach(game -> gamesDTO.add(new GameHistoryDTO(game.getDate(), game.getWinned(), game.getCorrectWord().getValue(), game.getAttempts())));
         return gamesDTO;
     }
 
