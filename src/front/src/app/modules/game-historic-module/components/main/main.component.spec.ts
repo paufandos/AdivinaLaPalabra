@@ -51,7 +51,7 @@ fdescribe('Game-historic', () => {
       attempts: 0,
     };
 
-    const Games: Games[] = component.Games;
+    const Games: Games[] = component.lastTenGames;
 
     Games.push(Game);
 

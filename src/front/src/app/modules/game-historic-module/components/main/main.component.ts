@@ -1,76 +1,64 @@
-import { DatePipe } from '@angular/common';
-import { Component } from '@angular/core';
-import { Games } from 'src/app/interfaces/palabra';
-import { GameService } from 'src/app/services/game.service';
+import { DatePipe } from "@angular/common";
+import { Component, ElementRef } from "@angular/core";
+import { Games, LastTenGames } from "src/app/interfaces/palabra";
+import { GameService } from "src/app/services/game.service";
+import { AllGamesDialogComponent } from "../all-games-dialog/all-games-dialog.component";
+import { MatDialog } from "@angular/material/dialog";
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss'],
+  selector: "app-main",
+  templateUrl: "./main.component.html",
+  styleUrls: ["./main.component.scss"],
 })
 export class MainComponent {
-  Games: Games[] = [];
-
-  watchAllGames = false;
-
-  areEnoughGames = true;
-
+  allGames: Games[] = [];
+  lastTenGames: Games[] = [];
   top3Games: Games[] = [];
+  areEnoughGames!: boolean;
 
-  constructor(private gameService: GameService) {}
+  constructor(private gameService: GameService, private dialog: MatDialog) {}
 
   ngOnInit(): void {
-    this.setAllGames();
-    this.setTop3Games();
+    this.setGamesHistory();
   }
 
-  getLastGames(): Games[] {
-    return this.Games;
-  }
-
-  setTenGames() {
-    this.gameService.getTenGames().subscribe((response: Games[]) => {
-      this.Games = response;
-      this.convertDate();
+  setGamesHistory(): void {
+    this.gameService.getGamesHistory().subscribe((response) => {
+      this.setTenGames(response[0]);
+      this.setTop3Games(response[1]);
     });
   }
 
-  setAllGames() {
-    this.gameService.getAllGames().subscribe({
-      next: (response) => {
-        this.Games = response;
-      },
-      error: () => {
-        this.setTenGames();
-        this.areEnoughGames = false;
-      },
-      complete: () => {this.convertDate()}
-    });
+  setTenGames(gamesResponse: LastTenGames) {
+    this.lastTenGames = gamesResponse.games;
+    this.areEnoughGames = gamesResponse.hasEnoughGames;
+    this.convertDate(this.lastTenGames);
   }
 
-  setTop3Games() {
-    this.gameService.getTop3Games().subscribe({
-      next: (response) => {
-        this.top3Games = response;
-        this.convertDate()
-      },
-    });
+  setTop3Games(gamesResponse: Games[]) {
+    this.top3Games = gamesResponse;
+    this.convertDate(this.top3Games);
   }
 
-  convertDate() {
-    const datePipe = new DatePipe('en-US');
-    this.Games.forEach((item, index) => {
+  convertDate(games: Games[]) {
+    const datePipe = new DatePipe("en-US");
+    games.forEach((item, index) => {
       const fecha: Date | null = new Date(item.date);
-      this.Games[index].date =
-        datePipe.transform(fecha, 'dd/MM/yyyy HH:mm') ?? '';
+      games[index].date = datePipe.transform(fecha, "dd/MM/yyyy HH:mm") ?? "";
     });
   }
 
   showAllGames() {
-    this.watchAllGames = true;
-  }
-
-  showTenGames() {
-    this.watchAllGames = false;
+    this.gameService.getAllGames().subscribe({
+      next: (response) => {
+        this.allGames = response;
+        this.convertDate(this.allGames);
+        this.dialog.open(AllGamesDialogComponent, {
+          data: {
+            games: this.allGames,
+          },
+        });
+      },
+    });
   }
 }

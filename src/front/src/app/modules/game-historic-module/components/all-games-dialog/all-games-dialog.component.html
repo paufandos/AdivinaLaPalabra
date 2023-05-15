@@ -1,0 +1,52 @@
+<div class="p-3 text-center" style="width: 75vw">
+  <h1 mat-dialog-title role="dialog" class="text-success title-shadow">
+    Historial de partidas
+  </h1>
+  <hr />
+  <div mat-dialog-content>
+    <div class="table-responsive scrolleable">
+      <table class="table table-striped rounded bg-white">
+        <thead class="bg-success text-white shadow-sm sticky-top">
+          <tr>
+            <th class="left-radius" scope="col">Fecha</th>
+            <th scope="col">Intentos</th>
+            <th scope="col">Palabra correcta</th>
+            <th class="right-radius" scope="col">Victoria</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let game of games">
+            <td
+              [ngClass]="{
+                'text-success': game.winned,
+                'text-danger': !game.winned
+              }"
+            >
+              {{ game.date }}
+            </td>
+            <td
+              [ngClass]="{
+                'text-success': game.winned,
+                'text-danger': !game.winned
+              }"
+            >
+              {{ game.attempts }}
+            </td>
+            <td
+              [ngClass]="{
+                'text-success': game.winned,
+                'text-danger': !game.winned
+              }"
+            >
+              {{ game.correctWord }}
+            </td>
+            <td>
+              <i class="bi bi-check text-success" *ngIf="game.winned"></i>
+              <i class="bi bi-x text-danger fs-5" *ngIf="!game.winned"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

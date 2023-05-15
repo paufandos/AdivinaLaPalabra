@@ -48,10 +48,16 @@ export class MainInterceptor implements HttpInterceptor {
       this.showError(message);
       this.router.navigateByUrl('login');
     }
+
     if (error.status !== this.errorNoConection && error.status !== this.errorInsufficientGames) {
       message = error.error.message;
       this.showError(message);
     }
+
+    if (error.status === this.errorNoConection) {
+      this.showError(message);
+    }
+    
     this.gameService.$disableKeyboard.next(true);
   }
   showError(message: string) {

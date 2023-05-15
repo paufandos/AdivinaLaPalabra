@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { GameHistoricModuleRoutingModule } from './game-historic-module-routing.module';
 import { MainComponent } from './components/main/main.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AllGamesDialogComponent } from './components/all-games-dialog/all-games-dialog.component';
 
 
 @NgModule({
   declarations: [
-    MainComponent
+    MainComponent,
+    AllGamesDialogComponent
   ],
   imports: [
     CommonModule,

@@ -41,5 +41,9 @@ export type Games = {
   correctWord: boolean;
 
   attempts: number;
+};
 
+export type LastTenGames = {
+  hasEnoughGames: boolean;
+  games: Games[];
 };

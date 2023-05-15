@@ -1,9 +1,10 @@
 <div class="container-fluid text-center p-5">
   <div class="row">
     <div class="col-5">
-      <h3>Mejores 3 partidas</h3>
-      <div class="table-responsive">
-        <table class="table table-striped rounded bg-white">
+      <h2 class="text-success title-shadow">Mejores 3 partidas</h2>
+      <hr>
+      <div class="table-responsive mb-0">
+        <table class="table table-striped rounded bg-white m-0">
           <thead class="bg-success text-white shadow-sm">
             <tr>
               <th class="left-radius" scope="col">Fecha</th>
@@ -13,17 +14,17 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let game of top3Games; index as i">
-              <td *ngIf="i < 10 || watchAllGames">
+            <tr *ngFor="let game of top3Games">
+              <td>
                 {{ game.date }}
               </td>
-              <td *ngIf="i < 10 || watchAllGames">
-                <span *ngIf="game.winned">{{ game.attempts }}</span>
+              <td>
+                {{ game.attempts }}
               </td>
-              <td *ngIf="i < 10 || watchAllGames">
+              <td>
                 {{ game.correctWord }}
               </td>
-              <td *ngIf="i < 10 || watchAllGames">
+              <td>
                 <i class="bi bi-check text-success" *ngIf="game.winned"></i>
                 <i class="bi bi-x text-danger fs-5" *ngIf="!game.winned"></i>
               </td>
@@ -31,9 +32,11 @@
           </tbody>
         </table>
       </div>
+      <img src="../../../../../assets/img/top3.png" alt="top3" class="top3 m-0">
     </div>
     <div class="col-7">
-      <h3>Últimas 10 partidas</h3>
+      <h2 class="text-success title-shadow">Últimas 10 partidas</h2>
+      <hr>
       <div class="table-responsive">
         <table class="table table-striped rounded bg-white">
           <thead class="bg-success text-white shadow-sm">
@@ -45,17 +48,29 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let game of Games; index as i">
-              <td *ngIf="i < 10 || watchAllGames" [ngClass]="{'text-success': game.winned, 'text-danger': !game.winned}">
+            <tr *ngFor="let game of lastTenGames; index as i">
+              <td [ngClass]="{
+                  'text-success': game.winned,
+                  'text-danger': !game.winned
+                }">
                 {{ game.date }}
               </td>
-              <td *ngIf="i < 10 || watchAllGames" [ngClass]="{'text-success': game.winned, 'text-danger': !game.winned}">
-                <span *ngIf="game.winned">{{ game.attempts }}</span>
+              <td [ngClass]="{
+                  'text-success': game.winned,
+                  'text-danger': !game.winned
+                }">
+                {{ game.attempts }}
               </td>
-              <td *ngIf="i < 10 || watchAllGames" [ngClass]="{'text-success': game.winned, 'text-danger': !game.winned}">
+              <td [ngClass]="{
+                  'text-success': game.winned,
+                  'text-danger': !game.winned
+                }">
                 {{ game.correctWord }}
               </td>
-              <td *ngIf="i < 10 || watchAllGames" [ngClass]="{'text-success': game.winned, 'text-danger': !game.winned}">
+              <td [ngClass]="{
+                  'text-success': game.winned,
+                  'text-danger': !game.winned
+                }">
                 <i class="bi bi-check text-success" *ngIf="game.winned"></i>
                 <i class="bi bi-x text-danger fs-5" *ngIf="!game.winned"></i>
               </td>
@@ -65,4 +80,7 @@
       </div>
     </div>
   </div>
+  <button class="btn bg-dark-green text-white w-50 p-2 fs-5" *ngIf="areEnoughGames" (click)="showAllGames()">
+    VER TODAS LAS PARTIDAS
+  </button>
 </div>
