@@ -49,13 +49,14 @@ fdescribe('Game-historic', () => {
       winned: false,
 
       attempts: 0,
+      correctWord: false
     };
 
     const Games: Games[] = component.lastTenGames;
 
     Games.push(Game);
 
-    component.convertDate();
+    component.convertDate(Games);
 
     expect(Games[0].date).toEqual('09/10/2001 08:00');
   });

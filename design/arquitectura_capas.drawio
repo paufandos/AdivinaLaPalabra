@@ -1,0 +1,204 @@
+<mxfile host="app.diagrams.net" modified="2023-05-16T10:40:13.006Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="GWF3CH699wlTWAd6gNAK" version="21.3.2" type="device">
+  <diagram name="Página-1" id="pJPHBPOr2bD-LPC566t_">
+    <mxGraphModel dx="763" dy="385" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ybBPUuu3D002XB6l_ydY-14" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;perimeterSpacing=0;strokeColor=#006600;shadow=0;glass=0;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="930" y="110" width="500" height="435.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-43" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;shape=flexArrow;strokeColor=#003300;startArrow=block;fillColor=#006600;shadow=0;fillStyle=solid;gradientColor=none;exitX=1.002;exitY=0.883;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ybBPUuu3D002XB6l_ydY-13" target="ybBPUuu3D002XB6l_ydY-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="475.25" as="sourcePoint" />
+            <mxPoint x="600" y="475.25" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="484.25" />
+              <mxPoint x="520" y="325.25" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-13" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;shadow=0;glass=0;strokeColor=#006600;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="30" y="123" width="404" height="409.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shape=flexArrow;strokeColor=#006600;fillColor=#198754;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1232.13" y="192" as="sourcePoint" />
+            <mxPoint x="1232.13" y="230.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-1" value="CONTROLADORES" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontSize=15;fillColor=#d5e8d4;strokeColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="129" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-2" value="SERVICIOS" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontSize=15;fillColor=#d5e8d4;strokeColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="234" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-3" value="REPOSITORIOS" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontSize=15;fillColor=#d5e8d4;strokeColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="339" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-5" value="D&lt;br&gt;T&lt;br&gt;O" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontSize=15;fillColor=#d5e8d4;strokeColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1335" y="144" width="60" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-7" value="" style="shape=image;html=1;verticalAlign=middle;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/heroicons-solid/20/database-128.png;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontSize=15;fillColor=#d5e8d4;strokeColor=none;rounded=1;fontStyle=1;imageBorder=none;imageBackground=none;" vertex="1" parent="1">
+          <mxGeometry x="1261" y="404.5" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-26" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#006600;fontColor=#198754;fillColor=#198754;shape=flexArrow;startArrow=block;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="204" y="222.25" as="sourcePoint" />
+            <mxPoint x="281.5" y="222.7499999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-8" value="VISTAS" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontStyle=1;fontSize=15;fillColor=#d5e8d4;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="74" y="152.75" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-9" value="HTML" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;gradientColor=none;fillColor=#198754;strokeWidth=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="89" y="192.75" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-10" value="CSS" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;gradientColor=none;fillColor=#198754;strokeWidth=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="89" y="242.75" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-28" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;shape=flexArrow;fontColor=#198754;strokeColor=#006600;fillColor=#198754;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="134" y="414.25" as="sourcePoint" />
+            <mxPoint x="134" y="301.7499999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-11" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#006600;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.users;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;" vertex="1" parent="1">
+          <mxGeometry x="95" y="419.75" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-12" value="ENVIA PETICIÓN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="445" y="374.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-39" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;shape=flexArrow;strokeColor=#006600;startArrow=block;fontColor=#198754;fillColor=#198754;exitX=0.364;exitY=0.962;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="328.18000000000006" y="258.008" as="sourcePoint" />
+            <mxPoint x="328" y="319.25" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="328" y="278.25" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-15" value="CONTROLLERS" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontSize=15;fillColor=#d5e8d4;strokeColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="287.5" y="193.25" width="120" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-18" value="MODELO DE &lt;br&gt;DATOS" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontSize=15;fillColor=#d5e8d4;strokeColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="325.25" width="200" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-19" value="SERVICIOS" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontSize=15;fillColor=#d5e8d4;strokeColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="458.75" width="120" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-23" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#3F8624;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.http_protocol;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;" vertex="1" parent="1">
+          <mxGeometry x="620" y="259.75" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;" edge="1" parent="1" source="ybBPUuu3D002XB6l_ydY-18" target="ybBPUuu3D002XB6l_ydY-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-40" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;shape=flexArrow;strokeColor=#006600;startArrow=block;fontColor=#198754;fillColor=#198754;exitX=0.364;exitY=0.962;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260.18000000000006" y="389.748" as="sourcePoint" />
+            <mxPoint x="260" y="450.99" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="260" y="409.99" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-41" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#006600;fontColor=#198754;fillColor=#198754;shape=flexArrow;startArrow=block;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="487.77" as="sourcePoint" />
+            <mxPoint x="417.5" y="488.26999999999987" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-44" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;shape=flexArrow;strokeColor=#003300;startArrow=block;fillColor=#006600;shadow=0;fillStyle=solid;gradientColor=none;entryX=0.001;entryY=0.132;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ybBPUuu3D002XB6l_ydY-23" target="ybBPUuu3D002XB6l_ydY-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="324.49" as="sourcePoint" />
+            <mxPoint x="860" y="205.25" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="820" y="325.25" />
+              <mxPoint x="820" y="167.25" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-45" value="RECIBE PETICIÓN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="740" y="212.75" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-46" value="ENVÍA RESPUESTA" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="830" y="212.75" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-47" value="RECIBE RESPUESTA" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="530" y="374.5" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-48" value="USUARIOS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontStyle=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="84" y="502.5" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-49" value="DATA BINDING" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="194" y="169.25" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-51" value="I" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;gradientColor=none;fillColor=#198754;strokeWidth=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1215" y="234" width="35" height="34.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-52" value="I" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;gradientColor=none;fillColor=#198754;strokeWidth=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1215" y="339.75" width="35" height="34.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-54" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006600;fontColor=#198754;fillColor=#198754;shape=flexArrow;startArrow=block;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1257" y="165.5" as="sourcePoint" />
+            <mxPoint x="1324.5" y="165.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-55" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006600;fontColor=#198754;fillColor=#198754;shape=flexArrow;startArrow=block;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1257" y="263.86" as="sourcePoint" />
+            <mxPoint x="1324.5" y="263.86" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006600;fontColor=#198754;fillColor=#198754;shape=flexArrow;startArrow=block;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1255" y="368.71000000000004" as="sourcePoint" />
+            <mxPoint x="1322.5" y="368.71000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shape=flexArrow;strokeColor=#006600;fillColor=#198754;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1232.13" y="297.5" as="sourcePoint" />
+            <mxPoint x="1232.13" y="336" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-59" value="SPRING JPA" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.sql_slave;fillColor=#006600;gradientColor=none;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1086" y="450.51" width="59.99" height="64.49" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shape=flexArrow;strokeColor=#006600;fillColor=#198754;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1115.7900000000002" y="402" as="sourcePoint" />
+            <mxPoint x="1115.7900000000002" y="440.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-61" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006600;fontColor=#198754;fillColor=#198754;shape=flexArrow;startArrow=none;startFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1182.5" y="482.40000000000003" as="sourcePoint" />
+            <mxPoint x="1250" y="482.40000000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-62" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#006600;fontColor=#198754;fillColor=#198754;shape=flexArrow;startArrow=block;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="942" y="158.38" as="sourcePoint" />
+            <mxPoint x="1019.5" y="158.87999999999988" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-63" value="INTERACTUAN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="30" y="353" width="100" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-67" value="CLIENTE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontSize=50;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="130" y="30" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-71" value="SERVIDOR" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontSize=50;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1055" y="30" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-72" value="JSON" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="354" y="440" width="56" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ybBPUuu3D002XB6l_ydY-73" value="JSON" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Titillium Web;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DTitillium%2BWeb;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="952" y="179" width="56" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

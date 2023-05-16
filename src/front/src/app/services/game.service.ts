@@ -71,9 +71,9 @@ export class GameService {
   }
 
   getGamesHistory(): Observable<any> {
-    const getLastTenGames$ = this.http.get<LastTenGames>(baseUrl.concat("getLastTenGames"));
-    const getTopThreeGames$ = this.http.get<Games[]>(baseUrl.concat("getTopThreeGames"));
+    const getLastTenGames = this.http.get<LastTenGames>(baseUrl.concat("getLastTenGames"));
+    const getTopThreeGames = this.http.get<Games[]>(baseUrl.concat("getTopThreeGames"));
 
-    return forkJoin([getLastTenGames$, getTopThreeGames$]);
+    return forkJoin([getLastTenGames, getTopThreeGames]);
   }
 }
