@@ -11,8 +11,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-import { GameHistoricModuleModule } from './modules/game-historic-module/game-historic-module.module';
-import { MainModuleModule } from './modules/main-module/main-module.module';
 
 fdescribe('AppComponent', () => {
   beforeEach(async () => {
@@ -20,12 +18,10 @@ fdescribe('AppComponent', () => {
       imports: [BrowserModule,
         AppRoutingModule,
         HttpClientModule,
-        MainModuleModule,
         BrowserAnimationsModule,
         MatDialogModule,
         FormsModule,
-        ReactiveFormsModule,
-        GameHistoricModuleModule],
+        ReactiveFormsModule],
       declarations: [
         AppComponent,
         NavbarComponent,
@@ -43,10 +39,10 @@ fdescribe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`Deberia tener el titulo de 'AdivinaLaPalabra-Front'`, () => {
+  it(`Deberia tener el titulo de 'AdivinaLaPalabra'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('AdivinaLaPalabra-Front');
+    expect(app.title).toEqual('AdivinaLaPalabra');
   });
 
 });

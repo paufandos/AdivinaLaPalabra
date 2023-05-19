@@ -1,20 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-
 import {
   LetterStatus,
   Palabra,
   Rounds,
   DataDialog,
-} from '../../../../interfaces/palabra';
-
+} from '../../interfaces/palabra';
 import { GameService } from 'src/app/services/game.service';
-
-import { TECLADO } from 'src/assets/datos/datos';
-
+import { TECLADO } from 'src/assets/datos/data';
 import { MatDialog } from '@angular/material/dialog';
-
 import { DialogComponent } from 'src/app/components/dialog/dialog.component';
-
 import { DialogFinishComponent } from 'src/app/components/dialog-finish/dialog-finish.component';
 import { LOST_GAME_DIALOG, WIN_GAME_DIALOG } from 'src/assets/datos/consts';
 

@@ -7,10 +7,10 @@ import { MatDialog } from "@angular/material/dialog";
 
 @Component({
   selector: "app-main",
-  templateUrl: "./main.component.html",
-  styleUrls: ["./main.component.scss"],
+  templateUrl: "./game.history.component.html",
+  styleUrls: ["./game.history.component.scss"],
 })
-export class MainComponent {
+export class GameHistoryComponent {
   allGames: Games[] = [];
   lastTenGames: Games[] = [];
   top3Games: Games[] = [];

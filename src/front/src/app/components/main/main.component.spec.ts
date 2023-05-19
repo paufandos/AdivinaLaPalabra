@@ -6,8 +6,6 @@ import { CommonModule } from '@angular/common';
 
 import { HttpClientModule } from '@angular/common/http';
 
-import { MainModuleRoutingModule } from '../../main-module-routing.module';
-
 import { FormsModule } from '@angular/forms';
 
 import { MatDialogModule } from '@angular/material/dialog';
@@ -23,8 +21,6 @@ fdescribe('MainComponent', () => {
         CommonModule,
 
         HttpClientModule,
-
-        MainModuleRoutingModule,
 
         FormsModule,
 

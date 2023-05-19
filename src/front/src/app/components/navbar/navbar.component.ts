@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { baseUrl } from 'src/assets/datos/consts';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({

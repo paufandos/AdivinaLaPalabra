@@ -5,17 +5,19 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { MainModuleModule } from './modules/main-module/main-module.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { MainInterceptor } from './interceptores/main.interceptor';
+import { MainInterceptor } from './interceptors/main.interceptor';
 import { DialogFinishComponent } from './components/dialog-finish/dialog-finish.component';
-import { Logininterceptor } from './interceptores/login.interceptor';
+import { Logininterceptor } from './interceptors/login.interceptor';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CookieService } from 'ngx-cookie-service';
 import { LoginComponent } from './components/login/login.component';
-import { GameHistoricModuleModule } from './modules/game-historic-module/game-historic-module.module';
+import { AllGamesDialogComponent } from './components/all-games-dialog/all-games-dialog.component';
+import { GameHistoryComponent } from './components/game-history/game.history.component';
+import { MainComponent } from './components/main/main.component';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -26,17 +28,21 @@ import { GameHistoricModuleModule } from './modules/game-historic-module/game-hi
     DialogComponent,
     DialogFinishComponent,
     LoginComponent,
+    AllGamesDialogComponent,
+    GameHistoryComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MainModuleModule,
     BrowserAnimationsModule,
     MatDialogModule,
     FormsModule,
-    ReactiveFormsModule,
-    GameHistoricModuleModule
+    ReactiveFormsModule, 
+    CommonModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [CookieService,
     {

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
+import { GameHistoryComponent } from './components/game-history/game.history.component';
+import { MainComponent } from './components/main/main.component';
 
 const routes: Routes = [
   {
@@ -10,21 +12,15 @@ const routes: Routes = [
   },
   {
     path: 'main',
-    loadChildren: () =>
-      import('./modules/main-module/main-module.module').then(
-        (module) => module.MainModuleModule
-      ),
+    component: MainComponent,
   },
   {
     path: 'login',
     component: LoginComponent,
   },
   {
-    path: 'game-historic',
-    loadChildren: () =>
-      import('./modules/game-historic-module/game-historic-module.module').then(
-        (module) => module.GameHistoricModuleModule
-      ),
+    path: 'game-history',
+    component: GameHistoryComponent
   },
 ];
 

@@ -1,36 +1,29 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { MainComponent } from './main.component';
-
+import { GameHistoryComponent } from './game.history.component';
 import { CommonModule } from '@angular/common';
-
-import { GameHistoricModuleRoutingModule } from '../../game-historic-module-routing.module';
-
 import { Games } from 'src/app/interfaces/palabra';
-
 import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
 
 fdescribe('Game-historic', () => {
-  let component: MainComponent;
+  let component: GameHistoryComponent;
 
-  let fixture: ComponentFixture<MainComponent>;
+  let fixture: ComponentFixture<GameHistoryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
         CommonModule,
-
-        GameHistoricModuleRoutingModule,
-
         HttpClientModule,
+        MatDialogModule
       ],
 
-      declarations: [MainComponent],
+      declarations: [GameHistoryComponent],
     })
 
       .compileComponents()
       .then(() => {
-        fixture = TestBed.createComponent(MainComponent);
+        fixture = TestBed.createComponent(GameHistoryComponent);
 
         component = fixture.componentInstance;
 

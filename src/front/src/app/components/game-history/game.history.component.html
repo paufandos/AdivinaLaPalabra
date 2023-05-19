@@ -15,13 +15,22 @@
           </thead>
           <tbody>
             <tr *ngFor="let game of top3Games">
-              <td>
+              <td [ngClass]="{
+                'text-success': game.winned,
+                'text-danger': !game.winned
+              }">
                 {{ game.date }}
               </td>
-              <td>
+              <td [ngClass]="{
+                'text-success': game.winned,
+                'text-danger': !game.winned
+              }">
                 {{ game.attempts }}
               </td>
-              <td>
+              <td [ngClass]="{
+                'text-success': game.winned,
+                'text-danger': !game.winned
+              }">
                 {{ game.correctWord }}
               </td>
               <td>

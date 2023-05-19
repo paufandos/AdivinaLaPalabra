@@ -52,13 +52,13 @@ fdescribe('LoginComponent', () => {
   it('Debe retornar mensaje de error para required', () => {
     const error = { errors: { required: true } };
     const result = login.identifyError(error);
-    expect(result).toEqual('El Campo es requerido');
+    expect(result).toEqual('El campo es requerido');
   });
 
   it('Debe retornar mensaje de error para pattern', () => {
     const error = { errors: { pattern: true } };
     const result = login.identifyError(error);
-    expect(result).toEqual('No puede contener Caracteres Especiales');
+    expect(result).toEqual('No puede contener caracteres especiales');
   });
 
   it('Debe retornar mensaje de error para minlength', () => {
